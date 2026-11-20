@@ -1,0 +1,31 @@
+{
+ "base": "https://docs.neo.work",
+ "checked_at": "2026-11-20T06:51:29Z",
+ "pages": {
+  "https://docs.neo.work/friday/user-guide.md": "759f9effe88185c2",
+  "https://docs.neo.work/studio/user-guide.md": "f395a57199e9c91b",
+  "https://docs.neo.work/studio/user-guide/docx.md": "2bc0b09459dec506",
+  "https://docs.neo.work/studio/user-guide/pages.md": "d422ed5d31bd53f1",
+  "https://docs.neo.work/studio/user-guide/spreadsheets.md": "62184f5710388ca3",
+  "https://docs.neo.work/tasket/create-your-first-task.md": "29a47d5be0a6f75d",
+  "https://docs.neo.work/tasket/find-your-way.md": "a50fe2903085ebbc",
+  "https://docs.neo.work/tasket/guides/add-sections-and-custom-fields.md": "7bd167867d59c8fe",
+  "https://docs.neo.work/tasket/guides/import-from-jira.md": "e856ed68724bba1a",
+  "https://docs.neo.work/tasket/guides/invite-members-and-guests.md": "7cc1943293ecdd63",
+  "https://docs.neo.work/tasket/guides/link-tasks.md": "45f02d9a2ea20334",
+  "https://docs.neo.work/tasket/guides/move-tasks.md": "d3419881f470845c",
+  "https://docs.neo.work/tasket/guides/plan-work-in-sprints.md": "72e9bc47db76d9b0",
+  "https://docs.neo.work/tasket/guides/save-a-list.md": "7864cccf91baf91a",
+  "https://docs.neo.work/tasket/guides/take-requests-from-other-teams.md": "4854beef09f48a3a",
+  "https://docs.neo.work/tasket/guides/track-work-through-stages.md": "af6cccfd3aabf8d5",
+  "https://docs.neo.work/tasket/guides/track-work-with-insights.md": "36fe421ca30d75e2",
+  "https://docs.neo.work/tasket/mcp/overview.md": "832b979e0ed4184d",
+  "https://docs.neo.work/tasket/mcp/setup.md": "826ebe9704e61b7e",
+  "https://docs.neo.work/tasket/mcp/use-cases/create-and-update-tasks.md": "4738e04d3c0ed4a3",
+  "https://docs.neo.work/tasket/mcp/use-cases/manage-projects-and-teams.md": "b82211a357282058",
+  "https://docs.neo.work/tasket/mcp/use-cases/summarise-your-work.md": "4727c2292587f411",
+  "https://docs.neo.work/tasket/mcp/use-cases/work-on-tasks-in-your-code-editor.md": "bb09fb07cb9b80d0",
+  "https://docs.neo.work/tasket/overview.md": "a87e74fbb34d43da",
+  "https://docs.neo.work/tasket/set-up-your-first-project.md": "6601be6b4b742cc6"
+ }
+}
