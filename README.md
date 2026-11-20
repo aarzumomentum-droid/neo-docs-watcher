@@ -1,6 +1,6 @@
 # docs.neo.work watcher for the Neo Blog Desk
 
-Every 15 minutes this repository checks the public docs at https://docs.neo.work.
+Every hour from 9 am to 7 pm IST, Monday to Friday, this repository checks the public docs at https://docs.neo.work.
 It fingerprints every feature page and, when a page is added, changed or removed,
 it tells the Neo Blog Desk, which:
 
@@ -18,7 +18,7 @@ Nothing is published. Approved edits become Sanity drafts. No access to the docs
    - `BLOG_DESK_FIRE_URL`: on claude.ai/code → Scheduled → "Neo Blog Desk docs hook" → Triggers → API, copy the URL.
    - `BLOG_DESK_TOKEN`: the token you copied when the task was created. If you didn't keep it, open the task → Edit → API → Regenerate.
 4. **Allow the workflow to save its state:** Settings → Actions → General → Workflow permissions → "Read and write permissions" → Save.
-5. **Run it once:** Actions → "Watch docs.neo.work" → Run workflow. The first run only saves fingerprints (no notification). After that it runs every 15 minutes by itself.
+5. **Run it once:** Actions → "Watch docs.neo.work" → Run workflow. The first run only saves fingerprints (no notification). After that it runs every hour on weekdays, 9 am to 7 pm IST.
 
 To see what it would send without sending anything, run it with "Only print what would be sent" ticked.
 

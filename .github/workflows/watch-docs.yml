@@ -1,4 +1,4 @@
-# Checks docs.neo.work every 15 minutes and tells the Neo Blog Desk about new,
+# Checks docs.neo.work every hour, 9 am to 7 pm IST on weekdays, and tells the Neo Blog Desk about new,
 # changed or removed pages. Needs two repository secrets:
 #   BLOG_DESK_FIRE_URL  Fire URL of the "Neo Blog Desk docs hook" scheduled task
 #   BLOG_DESK_TOKEN     that task's API token
@@ -6,7 +6,7 @@ name: Watch docs.neo.work
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "30 3-13 * * 1-5"   # hourly, 9:00 am to 7:00 pm IST, Mon-Fri
   workflow_dispatch:
     inputs:
       dry_run:
