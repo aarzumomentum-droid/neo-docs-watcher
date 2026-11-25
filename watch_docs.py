@@ -60,9 +60,23 @@ def fingerprint(text):
 
 
 def fire(text):
-    url, token = os.environ.get("FIRE_URL", ""), os.environ.get("FIRE_TOKEN", "")
+    url = os.environ.get("FIRE_URL", "").strip().strip("'\"<>").strip()
+    token = os.environ.get("FIRE_TOKEN", "").strip().strip("'\"").strip()
+    if token.lower().startswith("bearer "):
+        token = token[7:].strip()
     if not url or not token:
         sys.exit("Missing BLOG_DESK_FIRE_URL or BLOG_DESK_TOKEN secret.")
+    if url.startswith("sk-ant-"):
+        sys.exit("BLOG_DESK_FIRE_URL holds a token, not a URL. Paste the task's Fire URL there "
+                 "and the token in BLOG_DESK_TOKEN.")
+    if url.startswith("http://"):
+        url = "https://" + url[len("http://"):]
+    elif not url.startswith("https://"):
+        if re.match(r"^[A-Za-z0-9.-]+\.[A-Za-z]{2,}/", url):
+            url = "https://" + url  # pasted without the scheme
+        else:
+            sys.exit("BLOG_DESK_FIRE_URL isn't a URL (it should start with https://). "
+                     "Copy it again from the scheduled task's API trigger.")
     body = json.dumps({"text": text}).encode("utf-8")
     for attempt in range(2):
         req = urllib.request.Request(url, data=body, method="POST", headers={
